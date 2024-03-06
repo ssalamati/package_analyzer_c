@@ -1,0 +1,27 @@
+# Ignore CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CMakeLists.txt.user
+CMakeDoxyfile.in
+CMakeDoxyfile.out
+
+# Ignore build directories
+build/
+Debug/
+Release/
+*.dir/
+*.o
+*.o.d
+
+# Ignore editor files
+.vscode/
+*.swp
+*.swo
+*.sublime*
+*.idea/
+*.vs/
+
+# Executable
+package_analyzer
