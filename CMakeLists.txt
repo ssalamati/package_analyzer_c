@@ -8,7 +8,8 @@ find_package(ZLIB REQUIRED)
 
 add_executable(package_analyzer main.c package_analyzer.c)
 
-include_directories(/opt/homebrew/Cellar/uthash/2.3.0/include/)
+# Ensure the directory containing uthash.h is included
+include_directories(/path/to/uthash/header/file)
 
 target_include_directories(package_analyzer PRIVATE ${CURL_INCLUDE_DIRS} ${ZLIB_INCLUDE_DIRS})
 
